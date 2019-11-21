@@ -1,0 +1,20 @@
+.box {
+    width: 1000px + 500px;
+    height: 1000px - 200px;
+    margin-left: 20px * 5;
+    margin-right: (100px / 5); // 除法一定要加括號
+}
+
+$width: 1000px;
+$height: 253px;
+$s: 5;
+$t: 5;
+.app {
+    width: ($width / 2);
+    height: (100% / 3);
+    margin-top: 5px + (10px / 3);
+    margin-left: $width / $s;
+    // ----失敗-------------------------------
+    // margin-right: (50px / 3);
+    // margin-right: $height / $t;
+}

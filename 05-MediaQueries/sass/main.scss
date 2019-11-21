@@ -1,0 +1,30 @@
+@mixin pad {
+  @media (max-width: 768px) {
+    @content
+  }
+}
+@mixin mobile {
+  @media (max-width: 568px) {
+    @content
+  }
+}
+
+.header {
+  font-size: 20px;
+  @include pad {
+    font-size: 15px;
+  }
+  @include mobile {
+    font-size: 13px;
+  }
+}
+
+.content {
+  font-size: 16px;
+  @include pad {
+    color: red;
+  }
+  @include mobile {
+    font-size: 13px;
+  }
+}

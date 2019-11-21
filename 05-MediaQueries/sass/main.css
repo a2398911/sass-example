@@ -1,0 +1,32 @@
+.header {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 568px) {
+  .header {
+    font-size: 13px;
+  }
+}
+
+.content {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    color: red;
+  }
+}
+
+@media (max-width: 568px) {
+  .content {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

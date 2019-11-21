@@ -1,0 +1,41 @@
+@function pxToVw($px) {
+    @return $px * 100 / 1366+vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background-color: #d1d1d1;
+    font-family: "Arial", "Helvetica", "sans-serif";
+}
+
+article {
+    background-color: #FFF;
+    width: 80%;
+    max-width: 960px;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h1 {
+        color: #484848;
+        text-align: center;
+        color: #484848;
+        padding-bottom: 15px;
+        line-height: pxToVw(60);
+        font-size: pxToVw(60);
+    }
+    p {
+        color: #484848;
+        padding-bottom: 15px;
+        text-align: center;
+        font-size: pxToVw(16);
+    }
+}

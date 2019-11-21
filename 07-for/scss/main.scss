@@ -1,0 +1,11 @@
+// @for $i from 1 to 5 {
+//     // to不包含最後一個數字
+//     .box {
+//         background-color: $i;
+//     }
+// }
+// @for $i from 1 through 5 {
+//     .box-#{$i} {
+//         background-color: darken(white, $i * 10%);
+//     }
+// }

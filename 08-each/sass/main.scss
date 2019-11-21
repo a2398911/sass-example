@@ -1,0 +1,27 @@
+$themes: ( 
+// key, value
+'primary': blue, 
+'secondary': orange, 
+'danger': red, 
+); //記得要分號
+
+// 把顏色抓出來用 map-get
+
+// .box-primary {
+//     background-color: map-get($themes, 'primary'); //前面為這物件的變數，後面是要抓的key
+// }
+
+
+// 用 each 去抓出所有的顏色
+
+// @each $key, $value in $themes {
+//     .box {
+//         background-color: $value;
+//     }
+// }
+
+// @each $key, $value in $themes {
+//     .box-#{ $key } {
+//         background-color: $value;
+//     }
+// }
